@@ -3,14 +3,14 @@ import 'package:t2_sistema_distribuido/home.dart';
 import 'package:t2_sistema_distribuido/data/app_data.dart' as appData;
 import 'package:t2_sistema_distribuido/custom_widget/slide_tile.dart';
 
-class Programa1 extends StatefulWidget {
-  const Programa1({Key? key}) : super(key: key);
+class ProgramaBully extends StatefulWidget {
+  const ProgramaBully({Key? key}) : super(key: key);
 
   @override
-  State<Programa1> createState() => _Programa1State();
+  State<ProgramaBully> createState() => _ProgramaBullyState();
 }
 
-class _Programa1State extends State<Programa1> {
+class _ProgramaBullyState extends State<ProgramaBully> {
   PageController controller = new PageController();
   int slideIndex = 0;
   List mySLides = appData.listProgramBully;

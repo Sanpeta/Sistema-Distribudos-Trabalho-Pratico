@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:t2_sistema_distribuido/model/list_item_model.dart';
-import 'package:t2_sistema_distribuido/p1/programa1.dart';
-import 'package:t2_sistema_distribuido/p2/programa2.dart';
+import 'package:t2_sistema_distribuido/p_bully/programa_bully.dart';
+import 'package:t2_sistema_distribuido/p_seq_movel/programa_seq_movel.dart';
 
 class AlgoritmoItem extends StatelessWidget {
   final ListItemModel item;
@@ -16,9 +16,9 @@ class AlgoritmoItem extends StatelessWidget {
           MaterialPageRoute(
             builder: (context) {
               if (item.url == "bully") {
-                return const Programa2();
+                return const ProgramaBully();
               } else {
-                return const Programa1();
+                return const ProgramaSeqMovel();
               }
             },
           ),
