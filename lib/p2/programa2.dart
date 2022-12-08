@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:t2_sistema_distribuido/home.dart';
 import 'package:t2_sistema_distribuido/data/app_data.dart' as appData;
-import 'package:t2_sistema_distribuido/slide_tile.dart';
+import 'package:t2_sistema_distribuido/custom_widget/slide_tile.dart';
 
 class Programa2 extends StatefulWidget {
   const Programa2({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class Programa2 extends StatefulWidget {
 class _Programa2State extends State<Programa2> {
   PageController controller = PageController();
   int slideIndex = 0;
-  List mySLides = appData.listProgram2;
+  List mySLides = appData.listProgramSequencial;
 
   Widget _buildPageIndicator(bool isCurrentPage) {
     return Container(
@@ -21,7 +21,7 @@ class _Programa2State extends State<Programa2> {
       height: 6.0,
       width: 6.0,
       decoration: BoxDecoration(
-        color: isCurrentPage ? const Color(0xff21b6b6) : Colors.grey[300],
+        color: isCurrentPage ? const Color(0xff2121a4) : Colors.grey[300],
         borderRadius: BorderRadius.circular(12),
       ),
     );
@@ -53,57 +53,56 @@ class _Programa2State extends State<Programa2> {
             },
             children: <Widget>[
               SlideTile(
-                item: appData.listProgram2[0],
+                item: mySLides[0],
               ),
               SlideTile(
-                item: appData.listProgram2[1],
+                item: mySLides[1],
               ),
               SlideTile(
-                item: appData.listProgram2[2],
-              ),
-              SlideTile(
-                item: appData.listProgram2[3],
-              ),
-              SlideTile(
-                item: appData.listProgram2[4],
-              ),
-              SlideTile(
-                item: appData.listProgram2[5],
+                item: mySLides[2],
               ),
             ],
           ),
         ),
-        bottomSheet: slideIndex != 5
+        bottomSheet: slideIndex != 2
             ? Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    FlatButton(
-                      onPressed: () {},
+                    TextButton(
+                      onPressed: () {
+                        controller.animateToPage(2,
+                            duration: Duration(milliseconds: 400),
+                            curve: Curves.linear);
+                      },
                       child: const Text(
                         "Pular",
                         style: TextStyle(
-                            color: Color(0xff21B6B6),
+                            color: Color(0xff2121a4),
                             fontWeight: FontWeight.w600),
                       ),
                     ),
                     Row(
                       children: [
-                        for (int i = 0; i < 6; i++)
+                        for (int i = 0; i < 3; i++)
                           i == slideIndex
                               ? _buildPageIndicator(true)
                               : _buildPageIndicator(false),
                       ],
                     ),
-                    FlatButton(
-                      onPressed: () {},
-                      splashColor: Colors.blue[50],
+                    TextButton(
+                      onPressed: () {
+                        controller.animateToPage(slideIndex + 1,
+                            duration: Duration(milliseconds: 500),
+                            curve: Curves.linear);
+                      },
                       child: const Text(
                         "Próximo",
                         style: TextStyle(
-                            color: Color(0xff21B6B6),
-                            fontWeight: FontWeight.w600),
+                          color: Color(0xff2121a4),
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ),
                   ],
@@ -120,10 +119,10 @@ class _Programa2State extends State<Programa2> {
                 },
                 child: Container(
                   height: 50,
-                  color: Color(0xff21b6b6),
+                  color: const Color(0xff2121a4),
                   alignment: Alignment.center,
                   child: const Text(
-                    "VAMOS COMEÇAR",
+                    "VOLTAR TELA DE INÍCIO",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w600,

@@ -17,27 +17,15 @@ class SlideTile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Column(
-            children: <Widget>[
-              Text(
-                item.title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.w400,
-                    fontSize: (MediaQuery.of(context).size.width * 0.13),
-                    letterSpacing: 2),
-              ),
-              Text(
-                "ASTER",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: const Color(0xff21B6B6),
-                    fontWeight: FontWeight.w400,
-                    fontSize: (MediaQuery.of(context).size.width * 0.13),
-                    letterSpacing: 0),
-              ),
-            ],
+          Text(
+            item.title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.grey,
+              fontWeight: FontWeight.w400,
+              fontSize: (MediaQuery.of(context).size.width * 0.11),
+              letterSpacing: 2,
+            ),
           ),
           const SizedBox(
             height: 8,

@@ -1,151 +1,130 @@
+import 'package:t2_sistema_distribuido/model/list_item_model.dart';
 import 'package:t2_sistema_distribuido/model/slide_tile_model.dart';
 
-List<SlideTileModel> listProgram1 = [
+List<SlideTileModel> listProgramBully = [
   //1
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "Início",
+    imagePath: "assets/app_images/1.png",
+    desc: "",
   ),
 
   //2
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage2.png",
-    title: "Conheça a",
+    title: "Passo 1",
+    imagePath: "assets/app_images/GIF1.gif",
+    desc: "",
   ),
 
   //3
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage3.png",
-    title: "Conheça a",
+    title: "Passo 2",
+    imagePath: "assets/app_images/GIF2.gif",
+    desc: "",
   ),
 
   //4
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage4.png",
-    title: "Conheça a",
+    title: "Passo 3",
+    imagePath: "assets/app_images/GIF3.gif",
+    desc: "",
   ),
 
   //5
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage5.png",
-    title: "Conheça a",
+    title: "Passo 4",
+    imagePath: "assets/app_images/GIF4.gif",
+    desc: "",
   ),
 
   //6
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage6.png",
-    title: "Conheça a",
+    title: "Passo 5",
+    imagePath: "assets/app_images/GIF5.gif",
+    desc: "",
   ),
 ];
 
-List<SlideTileModel> listProgram2 = [
+List<SlideTileModel> listProgramSequencial = [
   //1
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "Início",
+    imagePath: "assets/app_images/2.png",
+    desc: "",
   ),
 
   //2
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "Passo 1",
+    imagePath: "assets/app_images/gif6.gif",
+    desc: "",
   ),
 
   //3
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
-  ),
-
-  //4
-  SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
-  ),
-
-  //5
-  SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
-  ),
-
-  //6
-  SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
-    imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "Passo 2",
+    imagePath: "assets/app_images/gif7.gif",
+    desc: "",
   ),
 ];
 
 List<SlideTileModel> listProgram3 = [
   //1
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
   ),
 
   //2
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
   ),
 
   //3
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
   ),
 
   //4
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
   ),
 
   //5
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
   ),
 
   //6
   SlideTileModel(
-    desc:
-        "Aster é uma plataforma para divulgar seu trabalho, achar novos clientes ou achar um prestador de serviço",
+    desc: "",
     imagePath: "assets/app_images/TutorialImage1.png",
-    title: "Conheça a",
+    title: "",
+  ),
+];
+
+List<ListItemModel> listDosAlgoritmos = [
+  ListItemModel(
+    title: "Algoritmo de Bully",
+    imagePath: 'assets/app_images/1.png',
+    desc:
+        "O algoritmo de Bully serve para eleger um líder em algoritmos distribuídos.",
+    url: "bully",
+  ),
+  ListItemModel(
+    title: "Algoritmo Sequenciador Móvel",
+    imagePath: 'assets/app_images/2.png',
+    desc:
+        "O algoritmo de Sequenciador Móvel serve para tolerar a falta do sequenciador fixo.",
+    url: "sequenciado movel",
   ),
 ];

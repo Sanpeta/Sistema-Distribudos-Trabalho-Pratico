@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:t2_sistema_distribuido/home.dart';
 import 'package:t2_sistema_distribuido/data/app_data.dart' as appData;
-import 'package:t2_sistema_distribuido/slide_tile.dart';
+import 'package:t2_sistema_distribuido/custom_widget/slide_tile.dart';
 
 class Programa3 extends StatefulWidget {
   const Programa3({Key? key}) : super(key: key);
@@ -52,24 +52,24 @@ class _Programa3State extends State<Programa3> {
               );
             },
             children: <Widget>[
-              SlideTile(
-                item: appData.listProgram2[0],
-              ),
-              SlideTile(
-                item: appData.listProgram2[1],
-              ),
-              SlideTile(
-                item: appData.listProgram2[2],
-              ),
-              SlideTile(
-                item: appData.listProgram2[3],
-              ),
-              SlideTile(
-                item: appData.listProgram2[4],
-              ),
-              SlideTile(
-                item: appData.listProgram2[5],
-              ),
+              // SlideTile(
+              //   item: appData.listProgram2[0],
+              // ),
+              // SlideTile(
+              //   item: appData.listProgram2[1],
+              // ),
+              // SlideTile(
+              //   item: appData.listProgram2[2],
+              // ),
+              // SlideTile(
+              //   item: appData.listProgram2[3],
+              // ),
+              // SlideTile(
+              //   item: appData.listProgram2[4],
+              // ),
+              // SlideTile(
+              //   item: appData.listProgram2[5],
+              // ),
             ],
           ),
         ),
@@ -79,7 +79,7 @@ class _Programa3State extends State<Programa3> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    FlatButton(
+                    TextButton(
                       onPressed: () {},
                       child: const Text(
                         "Pular",
@@ -96,9 +96,8 @@ class _Programa3State extends State<Programa3> {
                               : _buildPageIndicator(false),
                       ],
                     ),
-                    FlatButton(
+                    TextButton(
                       onPressed: () {},
-                      splashColor: Colors.blue[50],
                       child: const Text(
                         "Próximo",
                         style: TextStyle(
